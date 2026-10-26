@@ -1,0 +1,845 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+  <meta http-equiv="Content-Security-Policy" content="default-src &#39;self&#39;; img-src &#39;self&#39; blob: data:; object-src &#39;none&#39;; base-uri &#39;none&#39;; form-action &#39;none&#39;">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How the numbers are worked out: Filament Atlas</title>
+<meta name="description" content="How Filament Atlas's material pages work out and draw their numbers: typical values, what is ranked, the alternatives, the figures, print settings, prices and estimates.">
+<meta name="generator" content="Filament Atlas material pages, release 06c989076142, database snapshot 06c989076142, build 2026-10-26">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="/filament-atlas/favicon.svg">
+<script src="/filament-atlas/theme.js"></script>
+<script src="/filament-atlas/page.js" defer></script>
+  <link rel="stylesheet" crossorigin href="/filament-atlas/assets/page-BpC0Ryub.css">
+</head>
+<body class="kind-method">
+<!--[--><a class="skip" href="#main">Skip to the content</a><svg class="sprite" aria-hidden="true" focusable="false" width="0" height="0"><defs><circle id="mk-dot" r="4.5"></circle><rect id="mk-square" x="-4.1" y="-4.1" width="8.2" height="8.2" rx="1"></rect><path id="mk-diamond" d="M0 -5.6L5.6 0L0 5.6L-5.6 0Z"></path><circle id="dv-dot" r="3.6"></circle><rect id="dv-sq" x="-3.5" y="-3.5" width="7" height="7" rx="1"></rect><path id="dv-dia" d="M0 -4.8L4.8 0L0 4.8L-4.8 0Z"></path><path id="dv-chev-r" d="M-2.5 -4.5L2.5 0L-2.5 4.5"></path><path id="dv-chev-l" d="M2.5 -4.5L-2.5 0L2.5 4.5"></path><path id="dv-chev-u" d="M-4.5 2.5L0 -2.5L4.5 2.5"></path><path id="dv-chev-d" d="M-4.5 -2.5L0 2.5L4.5 -2.5"></path></defs></svg><header class="atlas-bar"><div class="bar-in"><a class="bar-brand" href="/filament-atlas/m/" title="Every material"><svg class="bar-mark" viewbox="0 0 32 32" aria-hidden="true" focusable="false"><rect width="32" height="32" rx="8"></rect><path d="M9 22h14M11 16.5h10M13 11h6"></path></svg><span class="bar-name">Filament Atlas</span></a><nav class="crumbs" aria-label="You are here"><ol><!--[--><li class="crumb"><a href="/filament-atlas/m/">Materials</a></li><!--]--><li class="crumb crumb-here"><details class="here"><summary aria-label="How the numbers are worked out: the sections of this page"><b>How the numbers are worked out</b><span class="here-sec" data-here>1. What the tool answers</span><svg class="icon icon-s" viewbox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M6 8l4 4 4-4"></path></svg></summary><div class="here-list"><ul><!--[--><li><a href="#1" aria-current="true">1. What the tool answers</a></li><li><a href="#2">2. Things and facts</a></li><li><a href="#3">3. A value&#39;s conditions</a></li><li><a href="#4">4. What counts for a headline</a></li><li><a href="#5">5. States</a></li><li><a href="#6">6. One value per product, headline and state</a></li><li><a href="#7">7. Shared formulations (twins)</a></li><li><a href="#8">8. Bounds: what a value measured another way proves</a></li><li><a href="#9">9. A material&#39;s spread</a></li><li><a href="#10">10. Price</a></li><li><a href="#11">11. Printing on the H2C</a></li><li><a href="#12">12. Chemical and environment evidence</a></li><li><a href="#13">13. Other requirements</a></li><li><a href="#14">14. Judging one requirement</a></li><li><a href="#15">15. A product&#39;s answer, a material&#39;s answer</a></li><li><a href="#16">16. Ranking</a></li><li><a href="#17">17. Estimates</a></li><li><a href="#18">18. The scenario</a></li><!--]--><!--[--><li class="sep"><a href="/filament-atlas/m/">All materials<!----></a></li><!--]--></ul></div></details></li></ol></nav><div class="bar-end"><a class="btn ret" data-return href="/filament-atlas/"><svg class="icon" viewbox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M8 5 3 10l5 5M3.5 10H17"></path></svg><span class="ret-long">Open the selector</span><span class="ret-short">Selector</span></a><button type="button" class="icon-btn" data-theme-toggle aria-label="Switch to dark theme" title="Switch to dark theme" hidden><svg class="icon theme-moon" viewbox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M15.5 12.5A6.5 6.5 0 0 1 7.5 4.5a6.5 6.5 0 1 0 8 8z"></path></svg><svg class="icon theme-sun" viewbox="0 0 20 20" aria-hidden="true" focusable="false" hidden><circle cx="10" cy="10" r="3.5"></circle><path d="M10 1.5v2M10 16.5v2M1.5 10h2M16.5 10h2M4 4l1.4 1.4M14.6 14.6L16 16M4 16l1.4-1.4M14.6 5.4L16 4"></path></svg></button></div></div></header><main id="main" class="page" data-page="method" data-release="06c989076142" data-snapshot="06c989076142" data-build="2026-10-26"><p class="print-line" aria-hidden="true" data-print-url="method/" data-print-release="Filament Atlas, release 06c989076142"></p><!--[--><article class="method"><header class="method-head"><h1>How the numbers are worked out</h1><div><p class="sec-open">Every rule the tool applies to turn a part's requirements into an answer, once, in plain words. Section 1 gives the
+four principles; the rest follow a value from its document to the answer: its conditions, what counts, a material's
+spread, printing on the H2C, judging a requirement, ranking, and estimates. Section 21 says what a material's records hold
+(coverage), which decides nothing.</p>
+<p>Each rule is tagged <span class="tag">physics</span> (material science or test physics) or <span class="tag">evidence</span> (what a document must say for a
+value to count).</p>
+</div></header><!--[--><section class="method-part" id="1" data-section="method-1"><h2>1. What the tool answers</h2><div><p>A part's requirements become limits (at least 100 °C, at least 3 GPa) and a goal (lightest, stiffest for its weight).
+The tool answers in two steps: which <strong>materials</strong> (PLA, PETG, PA6-CF…) can meet them and the H2C can print, then which
+<strong>products</strong>, from which makers. Every number traces to a maker's document and page. Where nothing is published the
+tool says so; it never fills a gap with zero.</p>
+<p>Four principles hold everywhere:</p>
+<ol>
+<li><strong>A material is the spread of its products.</strong> A material passes when at least one of its products meets every
+requirement at once, in one state; it fails only when every product fails. Values are never mixed across products.</li>
+<li><strong>A product is judged on its own evidence</strong>, then on its shared formulation's, then on safe bounds, and only last
+on an estimate, which never makes it pass.</li>
+<li><strong>Missing is an answer.</strong> Unknown (nothing comparable) and unsettled (evidence exists but cannot settle it) are
+different answers, and neither is a pass or a fail.</li>
+<li><strong>Comparable or set apart.</strong> A value counts only when it is what the requirement asks: the right property, test,
+specimen, direction, load and state. Everything else stays visible as evidence but decides nothing.</li>
+</ol>
+</div></section><section class="method-part" id="2" data-section="method-2"><h2>2. Things and facts</h2><div><ul>
+<li><strong>Families → materials → products.</strong> A product (a grade) is one maker's filament. A material groups products of one
+kind of plastic and filler. A family entry (PA, PA-CF, TPE…) owns no product and is never a candidate. Reference and
+study grades (IDs ending <code>-R#</code>) are never candidates; the familiar baseline is never a candidate. <span class="tag">evidence</span></li>
+<li><strong>Polymers</strong> carry the physics a material's kind implies: morphology (amorphous, semicrystalline, elastomer), whether
+it can crystallise, how it solidifies in a print, its glass transition, neat density and water uptake, each from a
+cited source. A material reads the polymer its estimate identity names, or where it names none, its base polymer's.</li>
+<li><strong>A source document</strong> is fingerprinted (SHA-256). It is a data sheet, a product page or guide, a reference, or a shop
+page. A newer edition supersedes an older one only where both print a date or version that orders them, from the same
+publisher.</li>
+<li><strong>A fact</strong> is what one document states on one page: a property value with its test conditions, a print setting, a
+resistance statement, a maker's know-how, a claim, or a price. Its quote or raw value is checked against the page text.</li>
+</ul>
+</div></section><section class="method-part" id="3" data-section="method-3"><h2>3. A value&#39;s conditions</h2><div><p>3.1 <strong>The number.</strong> A value is a point, a range, a one-sided bound (&quot;&gt; 500 %&quot;) or a mean with a band (&quot;35 ± 4&quot;).
+A mean with a band is judged on its mean, the band only marks closeness. A range is judged as an interval. A bound is an
+interval open at one end and never becomes a point. In spreads and sorting a range is represented by its lower end.
+<span class="tag">evidence</span></p>
+<p>3.2 <strong>Status.</strong> A published value can be flagged:</p>
+<ul>
+<li><em>physically implausible</em> (kept and shown, backs nothing: no product value, bound or estimate); a heat deflection at
+0.45 MPa below its sheet's own at 1.8 MPa is implausible only when it lies below by the test scatter or more (5 °C,
+<code>headlines.csv</code>): a lighter load cannot deflect a bar sooner, but two tests may differ by that much;</li>
+<li><em>nominal</em> (a number taken from the product's name, such as TPU &quot;95A&quot;: never a product value; the estimate may read it);</li>
+<li><em>qualitative</em> (&quot;no break&quot;: evidence, never a number); <em>unresolved unit or layout</em> (no number).
+A flag is set by a person against the page, never computed. <span class="tag">evidence</span></li>
+</ul>
+<p>3.3 <strong>Specimen form</strong> — what kind of object was tested. <span class="tag">physics</span></p>
+<ul>
+<li><em>printed</em> (stated, or implied by the document, with the implying words quoted);</li>
+<li><em>not stated</em>; <em>points to moulding</em> (the document's own table points to moulded bars or resin data);</li>
+<li><em>moulded</em> (raw material value), <em>film</em>, <em>filament</em>;</li>
+<li><em>off-recipe</em> (printed at a setting the product is not meant for, such as an unfoamed column, or below 100 % infill).</li>
+</ul>
+<p>Moulded, film, filament and off-recipe values are never a product's value for any property: a moulded, drawn or
+strand specimen is stiffer, stronger or more crystalline than a printed part.</p>
+<p>3.4 <strong>A bar described as printed.</strong> For a bar property (one whose headline names a direction or a load: tensile,
+flexural, impact, heat deflection) a value counts only if the document describes its bar as printed: a printed
+specimen form, or a print orientation stated on the row or its page (XY, Z, XZ, ZX, YX, ±45°). Otherwise it is
+<strong>set apart for good</strong>: shown and counted apart, never used to pass. <span class="tag">evidence</span> (owner ruling 2026-10-20: a set-apart
+value never helps a product pass but may still show that a print cannot reach a value; values whose sheet says only
+&quot;values may vary with printing conditions&quot; stay set apart.)</p>
+<ul>
+<li><em>Exception, heat deflection of a glassy plastic.</em> An undescribed heat-deflection bar counts all the same when its
+plastic cannot crystallise and its filler is none or a fibre or functional additive (carbon, glass, aramid fibre,
+ESD, conductive, PTFE, graphene, undisclosed), the product prints as its type, and nothing points to moulding.
+A glassy bar deflects near its glass transition however it was made. <span class="tag">physics</span></li>
+<li><em>A copy of a set-apart figure.</em> When a better-ranked document of the same product prints the same figure (within 1 %)
+in the same slot and that figure is set apart, the lower-ranked copy is set apart too. <span class="tag">evidence</span></li>
+</ul>
+<p>3.5 <strong>Direction.</strong> XY, Z, XZ, ZX (or one column for both), YX, ±45° raster, along-flow, unstated.</p>
+<ul>
+<li>XY and Z never stand in for each other: a print is weaker across its layers. <span class="tag">physics</span></li>
+<li>XZ, ZX, YX and ±45° are each their own, never read as XY or Z, because makers do not label orientations consistently
+(by ISO/ASTM 52921 a ZX bar is upright, yet sheets use the code for other bars). <span class="tag">evidence</span></li>
+<li>For an XY headline, a printed bar with no stated direction is read flat (XY). For a Z headline an unstated direction
+does not count. &quot;Stated, not a usable direction&quot; is never read flat: it is set apart.</li>
+<li>A headline with no direction (density, glass transition, Shore, heat deflection) refuses Z, XZ and ZX values: those
+are another bar's. Other directions pass.</li>
+</ul>
+<p>3.6 <strong>Load (heat deflection).</strong> 0.45 MPa and 1.8 MPa are different tests (ISO 75 B and A; 66 and 264 psi). A value
+whose load is stated counts only for its own load (tolerance 0.01 MPa). A value with no stated load is set apart for the
+0.45 MPa headline and never counts for 1.8 MPa; it can still bound the 0.45 MPa value from below (§8). <span class="tag">physics</span></p>
+<p>3.7 <strong>Notch, test temperature, standard.</strong> <span class="tag">physics</span></p>
+<ul>
+<li>Notched and unnotched impact never mix; a notch not stated does not count for a notched headline.</li>
+<li>Only the notched Charpy and Izod headlines have a test temperature (23 °C): a value tested more than 2 °C away does
+not count for them, and an unstated temperature is the laboratory's. Other headlines do not check the test temperature.</li>
+<li>Charpy and Izod never mix (different properties). The Izod headline takes no value that names a standard other than
+ISO 180 (ASTM D256 reports energy per metre of notch); a value naming no standard is not refused.</li>
+<li>Shore A and Shore D are different units and never compared.</li>
+</ul>
+<p>3.8 <strong>Moisture and treatment.</strong> Moisture state is dry, conditioned or not stated; treatment is as printed, annealed
+(with its schedule: temperature and hours, either possibly unstated) or not stated. The typed state decides; the sheet's
+words are kept beside it. <span class="tag">evidence</span></p>
+<ul>
+<li><em>Annealing threshold.</em> A treatment at or below the polymer's glass transition is not annealing: below it the chains
+are glassy, so nothing crystallises and the stresses printed into the part relax only slowly. The value counts as printed.
+The glass transition is the lowest the polymer's source prints (<code>polymers.csv</code>: a range's low end, the conditioned
+value where it prints dry and conditioned; PLA: 55 °C), the safe end for a threshold, as the highest is for a ceiling
+(§8.2). Where no such source gives one, it is the lowest its own products' sheets print by DSC (a standard the word
+list marks <code>dsc</code>; a Vicat or an unnamed method does not count), with that record as its source: of a figure that may
+count, on any sample, of an active procurement product of its kind (no declared variant, no undisclosed commercial
+filler, §8.2); ASA: 97.8 °C. It is worked out at each load from the records, never copied into <code>polymers.csv</code>. A
+treatment of unstated temperature, or of a polymer with no glass transition on record, stays annealed. <span class="tag">physics</span></li>
+</ul>
+<p>3.9 <strong>Page statements.</strong> A heading or footnote that speaks for a table (&quot;Mechanical properties, dry&quot;, &quot;all specimens
+annealed at 100 °C for 16 h&quot;) applies to every value on that page and scope that states nothing of its own: a table's
+own statement first, then its scope's (tensile, flexural, impact, thermal, physical), then the page's. A value that
+states the opposite keeps its own words. Direction is inherited only by tensile, flexural and impact values on printed or
+undescribed bars. A value whose locator names no page inherits nothing. Inheritance is per field: a value that states its
+specimen still inherits the page's moisture, and so on; a specimen type beginning &quot;Not published&quot; states nothing.
+<span class="tag">evidence</span></p>
+</div></section><section class="method-part" id="4" data-section="method-4"><h2>4. What counts for a headline</h2><div><p>A <strong>headline</strong> is a property the tool decides on: density, tensile modulus and strength (XY, Z), elongation (XY, Z),
+flexural modulus and strength (XY, Z), notched Charpy and Izod, heat deflection at 0.45 and 1.8 MPa, glass transition,
+Shore A and D, and price. Some are shown only in the drawer and decide nothing (Z modulus, Z elongation, the flexural
+ones, heat deflection at 1.8 MPa).</p>
+<p>A value counts for a headline when every test below passes, in this order:</p>
+<ol>
+<li>it has a number; its property is one the headline reads, in the headline's unit;</li>
+<li>it is not implausible or nominal; its specimen is a printed part or not stated (§3.3), or, for density, glass
+transition and Shore hardness (properties of the material, not of how a bar was made), any sample of the material:
+a moulded bar, the filament or a film, never a part printed off its product's recipe (<code>headlines.csv</code>, specimen
+forms); for a filament that foams as it prints only a part counts, since the print's density and hardness are not the
+filament's, and its density and hardness only where its document states or implies the specimen was printed: a
+figure that names no specimen is most often the unfoamed filament's (five PLA Aero sheets print a density of 1100 to
+1240 kg/m³, near unfoamed PLA's 1240; FILAFLEX 95 FOAMY's page a Shore 95A, the grade its name gives) (<code>headlines.csv</code>,
+foamed specimen forms; owner's rulings, 2026-10-26);</li>
+<li>its moisture and treatment fit the state being judged (§5);</li>
+<li>notch, test temperature and standard fit (§3.7); direction fits (§3.5); load fits (§3.6);</li>
+<li>no better document outranks it (§6.1);</li>
+<li>as a bar property, its bar is described as printed or counts under the glassy exception (§3.4).</li>
+</ol>
+<p>Failing tests 1–5 means the value is not this headline's. Failing test 6 (or a caveat from §3.5 or §3.6) means it is
+<strong>set apart</strong>: shown and counted apart, never deciding.</p>
+<p>A headline may not apply to a material: heat deflection does not apply to elastomers. ISO 75 ends when the bar's strain
+has grown by 0.2 % under its load, which needs a modulus near 225 MPa at 0.45 MPa; a rubber starts below that, so its
+figure marks only a slight softening, not a heat limit.
+Then the material has no value for it and a requirement on it hides the material under Include (§15.2). <span class="tag">physics</span></p>
+<p>A recorded property may not apply to a material either (<code>properties.csv</code>, its Applies to): compression set is an
+elastomer's test, fibre content a fibre-filled material's figure, and a melting temperature
+applies only where the polymer can crystallise or where that is not known (an elastomer, whose hard segments melt; a
+support material; a plastic with no polymer row). An amorphous plastic has no crystals to melt: what its sheet calls a
+melting temperature is a processing or softening temperature (owner's ruling, 2026-10-25). Such a value stays on its
+record, but no page lists it for that material and no rule reads it. <span class="tag">physics</span></p>
+</div></section><section class="method-part" id="5" data-section="method-5"><h2>5. States</h2><div><p>A product is judged in the states it can be used in: as printed, each annealing schedule it publishes, each either dry
+or conditioned. <span class="tag">evidence</span></p>
+<ul>
+<li>A product has the as-printed dry state always; an annealed state for each distinct published schedule (exact match
+of temperature and hours, unstated parts included); and a conditioned state where it publishes a conditioned value.
+A state other than as-printed dry exists only if it holds at least one value of a selectable headline that changes in
+it. A twin's extra states are added after the product's own.</li>
+<li>A state other than as-printed dry holds only the headlines that change in it (annealing changes strength, stiffness,
+elongation, impact and heat deflection; moisture changes those and the glass transition; nothing changes density or
+Shore hardness). Other headlines are read from the as-printed state.</li>
+<li>A value belongs to a state only if its moisture and treatment match: an annealed value only to its own schedule, a
+conditioned value only to a conditioned state; an unstated moisture counts as dry, an unstated treatment as printed.
+For a headline annealing does not change (density, glass transition, Shore), an annealed value counts in every state
+unless the product publishes the same test explicitly as printed (the same property, direction and load).</li>
+<li>States are never combined: a dry value says nothing about the conditioned state. The exception is a plastic that
+takes up negligible water (<code>polymers.csv</code> records the uptake its source prints, <code>vocabulary.yaml</code> water-uptake the
+limits: at most 0.5 % at saturation to ISO 62, or, where it prints only a 24-hour figure, at most 0.15 % in 24 h, by
+the executor's ruling of 2026-10-18; today PET, PETG, PBT, PP, PE, PPS, PVDF, PC, PC-PBT, PPE-PS and COC): moisture
+changes none of its values, so its products have no conditioned state, a conditioned value counts as a dry one, and
+humid use judges its dry states.</li>
+<li><em>Judged dry.</em> A pass in dry use on a value moisture changes says it was judged dry (&quot;humid air lowers …&quot;) only where
+the product's polymer takes up at least 2 % water at saturation (<code>vocabulary.yaml</code> water-uptake; today PA6, PA66 and
+PA612), never where no uptake is recorded: below it humid air moves the values by a few per cent (owner's ruling,
+2026-10-25). It is a note; it changes no answer.</li>
+<li>States are tried in this order, and the earlier wins a tie: as printed, then schedules by temperature then hours
+(unstated last), dry before conditioned within each, states known only from a twin last.</li>
+<li><strong>The published value</strong> (what a product's own row shows; a material's spread counts it as §9 says) is chosen without
+a state. It may be an annealed value when the product publishes no as-printed value of that test; it is never annealed
+when the product publishes an explicitly as-printed value of the same test (the same property, direction and load).</li>
+<li>The scenario says which states may be used. Dry use judges only dry states; humid use only conditioned ones. Annealed
+states only if the user has an oven, and only schedules at or below its limit; a schedule with no stated temperature is
+always allowed. A product with no as-printed state in the asked moisture is judged in an empty one, unknown on what it
+does not publish; that empty state has no bounds (§8).</li>
+</ul>
+</div></section><section class="method-part" id="6" data-section="method-6"><h2>6. One value per product, headline and state</h2><div><p>6.1 <strong>Document precedence.</strong> Of a product's documents, the data sheet speaks before a product page or guide, which
+speaks before anything else; within a rank, a newer edition before an older one. Precedence works per slot, the
+question a figure answers (headline × state). A figure is outranked only where every slot it answers has a better
+document that speaks there; a figure only the lower document prints still stands. A document that prints one property
+at several values in one slot (two print speeds, two foaming temperatures) speaks for several settings and outranks
+nothing there. A set-apart figure never outranks anything: only figures that count speak. A slot's state is only whether
+a figure is annealed, conditioned and a part, so different schedules share one slot. An outranked figure stays visible
+as evidence. <span class="tag">evidence</span></p>
+<p>6.2 <strong>Preference among values that count</strong>, in order:</p>
+<ol>
+<li>comparable before set apart;</li>
+<li>a printed specimen before a not-stated one, before another sample of the material (§4);</li>
+<li>as printed before not stated before annealed;</li>
+<li>dry before not stated;</li>
+<li>the document named as the product's own source, whatever its class, before another document;</li>
+<li>the headline's first-listed property first (tensile strength before yield before break);</li>
+<li>a point before a range before a bound;</li>
+<li>the lowest record ID.</li>
+</ol>
+<p>6.3 <strong>Greatest endpoint.</strong> For XY tensile strength, the ultimate strength is the maximum stress of the test, so it is at
+least that test's yield and break stresses. The product's value is the greatest of the strength, yield and break values
+of the same test (same document, direction, specimen, moisture, treatment and temperature). <span class="tag">physics</span></p>
+</div></section><section class="method-part" id="7" data-section="method-7"><h2>7. Shared formulations (twins)</h2><div><p>Products of one material whose sheets print one table share a formulation key. <span class="tag">evidence</span></p>
+<ul>
+<li>A product reads a sibling's value only where it has no value of its own for that headline and state, at any level.
+It reads from the first sibling in order: one with measurements first, the same maker first, more measurements first,
+then by ID. A product never reads what its sibling itself read. The value is labelled &quot;data sheet shared with …&quot;.</li>
+<li>Siblings' extra states are added; the product's own values always win.</li>
+<li>Every sibling's values feed the product's bounds (§8), beside its own, whatever the product publishes.</li>
+<li>Its print recipe reads a sibling's only where its own profiles say nothing (§11.4).</li>
+<li>Different headlines may come from different siblings: siblings print one sheet (owner ruling 2026-10-23).</li>
+<li>A product never reads a sibling's price.</li>
+<li><strong>A reprinted table counts once</strong> in a material's median, range, quartiles and typical product: the sibling's own
+value counts and the twin's read of it does not; a twin's own recorded value still counts (owner ruling 2026-10-20).</li>
+<li><strong>A reprinted document speaks for the table it reprints.</strong> A document that prints, value for value, another product's
+table (<code>reprints</code> on the source) is that product's evidence: its values are shown on the product that reprints it,
+labelled &quot;reprints …&quot;, and set apart there; they count for neither product's value or spread, and give the product no
+bound, no measured value of its own (§13) and no figure an estimate reads. A reprint of a table of its own material is
+a twin: the two share a formulation key, so the product reads the table from its sibling, as above, and it counts once.
+A reprint of another material's table is not a twin, so its values decide nothing. A check holds each declaration to
+its pair: of the values whose property both documents print, at least three, four in five equal, and a reprint within
+one material shares the formulation key (owner, 2026-10-26).</li>
+</ul>
+</div></section><section class="method-part" id="8" data-section="method-8"><h2>8. Bounds: what a value measured another way proves</h2><div><p>Used only where a product's state holds no deciding value (none, set apart, or ceiling only). A comparable value always
+wins; a bound that contradicts it by more than the test scatter only marks it doubtful. <span class="tag">physics</span></p>
+<p>8.1 <strong>Conversions.</strong> A row of <code>data/rules/conversions.csv</code> says what a value measured another way proves about a
+headline, in its one safe direction: a floor, a ceiling, a band, an equality, or a demotion to a ceiling. Only rows with
+status <em>deciding</em> count; <em>reported</em> rows are shown only. A source value counts only when it would be comparable (not set
+apart) under the target headline's rules, with the row's own changes: its properties, its load (only CV63 admits an
+unstated load), its direction, its state and its specimen. A <em>printed</em> row takes only a printed specimen form, or a glassy
+heat-deflection bar under §3.4 (so CV01 reads no bar described only by an orientation); a <em>moulded or not stated</em> row
+(CV05) takes only moulded or undescribed bars and does not set them apart for being undescribed. The deciding rows:</p>
+<div class="scroll-x" tabindex="0" role="region" aria-label="8. Bounds: what a value measured another way proves"><table>
+<thead>
+<tr>
+<th>Row</th>
+<th>Proves</th>
+<th>Because</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CV01</td>
+<td>HDT at 1.8 MPa is a floor for HDT at 0.45 MPa, same state</td>
+<td>a bar deflects at a lower temperature under a heavier load</td>
+</tr>
+<tr>
+<td>CV63</td>
+<td>an HDT with no stated load is a floor for HDT at 0.45 MPa</td>
+<td>at either load it is at most the 0.45 MPa value</td>
+</tr>
+<tr>
+<td>CV03</td>
+<td>an annealed HDT is a ceiling for the as-printed one</td>
+<td>annealing crystallises and raises deflection, never lowers it</td>
+</tr>
+<tr>
+<td>CV04</td>
+<td>an annealed modulus × 1.28 is a ceiling for the as-printed one</td>
+<td>measured on same-sheet pairs</td>
+</tr>
+<tr>
+<td>CV05</td>
+<td>for a plastic that can crystallise, an HDT from a moulded or undescribed bar + 4 °C is only a ceiling</td>
+<td>a moulded bar is at least as dense and crystalline as a print; in 19 same-product pairs the printed bar was at most 4 °C higher</td>
+</tr>
+<tr>
+<td>CV06, CV09</td>
+<td>a Z modulus × 0.79 and a Z strength × 0.86 are floors for XY</td>
+<td>in every measured same-sheet pair (206 and 249), XY was at least 0.79 and 0.86 × Z</td>
+</tr>
+<tr>
+<td>CV07</td>
+<td>a conditioned modulus is a floor for a nylon's dry modulus</td>
+<td>water plasticises a nylon</td>
+</tr>
+<tr>
+<td>CV64</td>
+<td>for an unfilled plastic glassy as printed, its own glass transition + 15 °C is a ceiling for HDT at 0.45 MPa, as printed</td>
+<td>a glassy bar loses its stiffness at its glass transition</td>
+</tr>
+<tr>
+<td>CV75</td>
+<td>for a part crystalline as printed, its own melting point is a ceiling for HDT at 0.45 MPa</td>
+<td>no crystal carries a load above its melting point</td>
+</tr>
+<tr>
+<td>CV08</td>
+<td>a flexural modulus puts the tensile modulus within ×0.46–1.93</td>
+<td>measured band, for the listed matrices and fillers</td>
+</tr>
+</tbody>
+</table></div>
+<p>Not applied: an annealed source for an annealed target, a conditioned source for a conditioned target, a demotion for
+an annealed target (the part crystallised). A row may name another headline whose rules judge its source values (CV64
+reads a glass transition, and CV75 a melting point, by the glass transition's rules: any sample, no load), may take only source values above a temperature (CV64: a
+glass transition above room temperature, 23 °C, below which the part is not glassy), may bound only states that are not
+annealed, and may speak only for products of their kind (no declared variant, no undisclosed commercial filler, as §8.2).</p>
+<p>8.2 <strong>Class limits.</strong> A limit a whole kind of plastic cannot pass, from a cited source: an unfilled elastomer (TPU, TPE,
+PEBA, TPC, OBC, TPS, TPV) or plasticised PVC has a tensile modulus of at most 0.5 GPa; an unfilled product's density
+lies within its polymer's neat range (CL02); a part crystalline as printed deflects at 0.45 MPa below its polymer's
+melting point (CL04, beside CV75 for its own); an unfilled part of a plastic that prints glassy deflects at 0.45 MPa as
+printed at most CV64's 15 °C above its polymer's glass transition (CL05, beside CV64 for its own), for every such
+plastic with a glass transition on record but COC, whose grades run from about 80 to 180 °C. There a polymer's glass
+transition is the highest its sources print (<code>polymers.csv</code>), or where none does, the highest its products' sheets
+print by DSC (§3.8): a lower figure would cap a grade whose own is higher. A
+limit on its polymer's figure names the conversion row that bounds a product by its own (CL04 names CV75, CL05 CV64): it
+raises the polymer's figure as that row raises the product's, and holds in the states that row bounds. A limit widens to
+its kind's own published extremes: the neat-density, melting-point and glass-transition limits per polymer (§2), over
+the materials the row names, and only where a source prints the polymer's figure; the modulus limits once, across every
+material the row names. The extremes take each product's first-state and published values, comparable or set apart, twin
+reads included; a limit that holds only as printed (CL05, as CV64) takes only the first-state values and bounds no
+annealed state, since annealing crystallises a part of a plastic that can crystallise. Declared variants and materials
+with an undisclosed commercial filler are left out of the extremes, and a limit never applies to them. A plausibility
+window is a check, never a limit.</p>
+<p>8.3 <strong>Combining.</strong> The bounds that apply are intersected: the greatest floor and the least ceiling. A floor above a
+ceiling (or equal with an open end) means <strong>sheets disagree</strong>: unresolved, never a pass or a fail. Each bound is the
+source's end × factor + offset, rounded to 12 significant digits; on a tie at an end an open end wins, then a conversion's
+over a class limit's (which holds only beyond the test scatter), then the first bound by rule and record ID. A row reads
+the product's own printed state: a crystallising grade is crystalline. Only a product's published states get bounds.</p>
+<p>8.4 <strong>Ceiling only.</strong> Where CV05 applies, an as-printed HDT from a moulded or undescribed bar stays the product's value
+but is a ceiling only, at CV05's own bound, that value + 4 °C: through CV05 it may fail a minimum, never pass one. A
+ceiling needs a known load and a top: when the bar states no load, or the value is open at its top (&quot;&gt; 100 °C&quot;), CV05
+caps nothing and the value leaves the requirement unsettled whether it meets or misses the limit, because such an HDT
+cannot cap the 0.45 MPa value.</p>
+</div></section><section class="method-part" id="9" data-section="method-9"><h2>9. A material&#39;s spread</h2><div><p>A material's headline is the spread of its products' published values: how many, median, range, quartiles (from four
+values), and the typical product (the lower median: the ⌈m/2⌉-th of the m values the median uses; among equal values, own sheet
+over a twin's read, then lowest ID). <span class="tag">evidence</span></p>
+<ul>
+<li>Only active procurement products count; set-apart values, declared variants and values measured only after annealing
+are counted apart (unless every product is a variant); a reprinted table counts once (§7).</li>
+<li><em>One state: as printed.</em> On a headline annealing changes (§5), a product whose published value was measured after
+annealing is counted apart, with its schedule, where another product publishes the headline as printed. Where none
+does, the spread is over the annealed values and says that every one was measured after annealing. A value whose
+treatment is not stated counts as printed, as in §5, and a treatment at or below the glass transition is no annealing
+(§3.8). Annealing crystallises a part that can crystallise but prints glassy, raising its stiffness and heat
+deflection, and relaxes the stresses printed into any part, so a median across both states is no part's figure.
+<span class="tag">physics</span></li>
+<li><em>A bound is counted apart.</em> A value published only as a bound (&quot;at least&quot;, &quot;more than&quot;, &quot;at most&quot;, &quot;less than&quot;) is
+shown and counted apart from the median, range, quartiles and typical product where another product publishes the
+headline as a number: it says where the value is not, not where it is (§3.1). Where none does, the spread is over the
+bounds, each counted as its number and marked. It still judges requirements as the interval it is (§14).</li>
+<li>Products a maker sells as toughened are set apart from the Charpy and Izod medians when other values exist.</li>
+<li>Nobody chooses a material's number, and a material's spread decides nothing: products decide (§15).</li>
+</ul>
+</div></section><section class="method-part" id="10" data-section="method-10"><h2>10. Price</h2><div><p>A product's price is the median CAD/kg of its own listings in the sample, at the regular (list) price before tax and
+shipping; a sale price is never used. <span class="tag">evidence</span></p>
+<ul>
+<li>Canadian listings only, if it has any; otherwise foreign listings converted at one frozen Bank of Canada rate per
+currency, labelled converted. A foreign listing never makes a product buyable in Canada and never gives a buy link.</li>
+<li>A listing counts only when it is in the sample, eligible, of the exact product, 1.75 mm, with its net mass printed.</li>
+<li>A material's price is the median of its products' prices. A twin never reads a sibling's price.</li>
+<li>No sampled offer means unknown, not fail.</li>
+</ul>
+</div></section><section class="method-part" id="11" data-section="method-11"><h2>11. Printing on the H2C</h2><div><p>11.1 <strong>The printer.</strong> The H2C reaches 350 °C at the nozzle, 120 °C at the bed and 65 °C in its actively heated,
+enclosed chamber (<code>data/rules/printer.csv</code>). The user's own kit is a scenario input, not a printer capability: whether
+only a brass nozzle is fitted (the question asks what the user lacks, so owning a hardened nozzle never removes a
+material), whether an oven is available for annealing and its limit, and dry or humid use. Plate, AMS, nozzle routing,
+nozzle diameter and filament diameter are shown, never judged; a product found only in 2.85 mm is kept and labelled.
+<span class="tag">physics</span></p>
+<p>11.2 <strong>Reading a print window.</strong> Each profile states, per axis (nozzle, bed, chamber), a window (both ends, at least,
+up to, or a point), <em>not required</em>, <em>ambient</em>, <em>enclosed</em> (an enclosure asked for, which the H2C's heated chamber is,
+only where the guide asks one for that type), <em>recommended</em> or <em>no setpoint</em> (a &quot;-&quot; on the sheet: not the same as not
+needed), or nothing. Each window gets a verdict against the printer: <span class="tag">physics</span></p>
+<ul>
+<li><em>within</em>: not required, ambient, enclosed; a window wholly within reach; an &quot;at least&quot; nozzle or bed window whose
+bottom is at or below reach;</li>
+<li><em>within at the low end</em>: a window whose top the printer cannot reach and whose bottom it reaches by at least 5 °C
+(owner ruling 2026-10-18: a maker's window says any setting in it works); an &quot;up to&quot; window whose top lies above reach,
+since its open bottom is always reached; an &quot;at least&quot; chamber window is read as a window whose top cannot be reached;</li>
+<li><em>edge</em>: the same, reaching less than 5 °C into it (exactly its bottom included); so an &quot;at least 65 °C&quot; chamber is
+edge and &quot;at least 60 °C&quot; is within at the low end;</li>
+<li><em>exceeds a recommendation</em>: the window's bottom lies above reach but it is only recommended (a recommendation is not
+a requirement);</li>
+<li><em>exceeds</em>: the window's bottom lies above reach;</li>
+<li><em>unknown</em>: nothing, <em>recommended</em> or <em>no setpoint</em>.</li>
+</ul>
+<p>A sheet that says an enclosure is not needed and states no chamber clears the chamber (not required); one that asks
+for an enclosure does not, because an enclosure is not an actively heated chamber.</p>
+<p>11.3 <strong>Several profiles of one product.</strong> Several profiles of one sheet are several setups (a print speed, a nozzle
+size), so the best verdict wins: within, then within at the low end, then edge, then exceeds a recommendation, then
+exceeds, then unknown. Document precedence (§6.1) applies per axis among profiles that say something definite.
+Enclosure and hardened nozzle take the strictest statement (recommended over not needed; required over not); drying
+takes required, then optional, then not needed. <span class="tag">evidence</span></p>
+<p>11.4 <strong>Where a product's print recipe comes from</strong>, per axis, filling only silence: <span class="tag">evidence</span></p>
+<ol>
+<li>its own profiles; a profile &quot;speaks&quot; on an axis when it states anything there, even something that settles nothing
+(a &quot;-&quot;, a recommendation, words that could not be read, a nozzle-material list, a wear caution); for the chamber,
+an enclosure statement also speaks;</li>
+<li>the first twin that speaks (§7); a product with any profile of its own never reads a twin's hardened-nozzle
+statement;</li>
+<li>the printer maker's guide row for its material (the Bambu Lab Filament Guide, mapped to 17 materials), only for a
+product that prints as its type: no variant, or a crystallising grade or a cosmetic dense filler; a guide answers
+hardened nozzle only where it says yes or no;</li>
+<li>for the chamber only, the kind-of-plastic rule (§11.5).</li>
+</ol>
+<p>11.5 <strong>A silent chamber, decided by the kind of plastic.</strong> Where a product's own sheet, its twin's and its guide row say
+nothing at all about the chamber (and it has some recipe), a deciding row of <code>chamber_need.csv</code> for its family reads the
+silence as within. A row may decide only while at least 10 distinct makers of that family state a chamber on their own
+or a twin's sheet and at most one in ten asks above 65 °C, and no material of the family has a researched band wholly
+above 65 °C; the build recounts this every time and fails when a deciding row no longer qualifies. Deciding today: ABS,
+ASA, flexible elastomers, PETG, PLA, polyolefins. It fills, and counts makers among, only products that print as their
+type (§11.4 item 3); a variant's silent chamber stays unknown. For such a product an enclosure asked for with no
+chamber temperature, recommended or required (the H2C is enclosed), is silence: it says the part prints shielded, not
+how warm the chamber must be, so the chain goes on to a twin, the guide and the kind. A row switches between reported and deciding only with the owner's
+yes.
+Research bands are shown, never decide. <span class="tag">evidence</span></p>
+<p>11.6 <strong>Hardened nozzle.</strong> With only a brass nozzle: <span class="tag">physics</span></p>
+<ul>
+<li>a product whose recipe says a hardened nozzle is required fails; one whose recipe says none is needed passes;</li>
+<li>a product whose maker advises a nozzle harder than brass, or warns of wear, without requiring one is unknown;</li>
+<li>a product with nothing stated whose filler wears brass is unknown: its material's filler, a filler its own documents
+declare (a product column: a glow pigment its name names, a fibre its composition names), or its variant, as the word
+lists mark them: carbon, glass, aramid and natural fibre, metal and ceramic powders, a glow pigment, and a metal or
+mineral powder load its maker declares (stone and shell included); not glass spheres (owner, 2026-10-24);</li>
+<li>otherwise it passes, with a note to check the product: a wood, metal-effect, marble or sparkle fill its material
+names, or a filler it does not disclose (a density beyond its polymer's betrays one), can wear brass too.</li>
+</ul>
+<p>11.7 <strong>Drying.</strong> A product's drying need (required, optional, not needed) comes from the same chain (§11.4). The
+&quot;drying known&quot; requirement passes when a need is stated and is unknown on silence; the schedule is shown, never judged.</p>
+<p>11.8 <strong>Annealing (treatment).</strong> A product judged in an annealed state also needs its schedule repeatable: a schedule
+with its temperature or hours missing is unknown; a full schedule passes. The oven limit removes annealed states above
+it (§5); it never fails a product. <span class="tag">evidence</span></p>
+</div></section><section class="method-part" id="12" data-section="method-12"><h2>12. Chemical and environment evidence</h2><div><p>12.1 <strong>Categories.</strong> Acid, alkali, organic solvent, oil and grease, water solubility, UV and outdoor, moisture,
+hydrolysis, flammability, food contact, fatigue and creep. A category in which no record and no polymer-level reference
+(§12.5) gives a verdict is an indicator only: a requirement on it is unknown for every material. UV and outdoor,
+moisture and hydrolysis are verdict categories only through polymer-level references. <span class="tag">evidence</span></p>
+<p>12.2 <strong>A statement's verdict.</strong> A maker's words map to a verdict by a fixed list (<code>statement-verdicts</code>), ignoring case;
+the first match wins:</p>
+<div class="scroll-x" tabindex="0" role="region" aria-label="12. Chemical and environment evidence"><table>
+<thead>
+<tr>
+<th>Words</th>
+<th>Matched</th>
+<th>Verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>empty, &quot;No data available&quot;, &quot;Not applicable&quot;</td>
+<td>whole</td>
+<td>no data</td>
+</tr>
+<tr>
+<td>&quot;Not resistant to some…&quot;, &quot;Resistant to most…&quot;</td>
+<td>start</td>
+<td>limited</td>
+</tr>
+<tr>
+<td>&quot;Slightly resistant&quot;, &quot;Slight resistant&quot;, &quot;Limited resistance&quot;, &quot;Moderately resistant&quot;</td>
+<td>whole</td>
+<td>limited</td>
+</tr>
+<tr>
+<td>&quot;Not resistant&quot;</td>
+<td>whole</td>
+<td>not resistant</td>
+</tr>
+<tr>
+<td>&quot;Resistant&quot;, &quot;Good&quot;, &quot;Excellent&quot;</td>
+<td>whole</td>
+<td>resistant</td>
+</tr>
+<tr>
+<td>&quot;Poor&quot;, &quot;Bad&quot;</td>
+<td>whole</td>
+<td>not resistant</td>
+</tr>
+<tr>
+<td>&quot;Fair&quot;, &quot;Fair-Poor&quot;, &quot;Fair/Poor&quot;</td>
+<td>whole</td>
+<td>limited</td>
+</tr>
+<tr>
+<td>&quot;Insoluble…&quot;</td>
+<td>start</td>
+<td>insoluble</td>
+</tr>
+<tr>
+<td>&quot;Soluble…&quot;</td>
+<td>start</td>
+<td>soluble</td>
+</tr>
+<tr>
+<td>&quot;Self-extinguishing…&quot;, &quot;Self extinguishing…&quot;</td>
+<td>start</td>
+<td>self-extinguishing</td>
+</tr>
+<tr>
+<td>&quot;Flammable&quot;</td>
+<td>whole</td>
+<td>flammable</td>
+</tr>
+<tr>
+<td>anything else (&quot;Resistant to acids&quot;, &quot;Excellent printability&quot;)</td>
+<td></td>
+<td>no verdict</td>
+</tr>
+</tbody>
+</table></div>
+<p>Limited is never resistant. <span class="tag">evidence</span></p>
+<p>12.3 <strong>Whose statements count.</strong> The product's own; if it has none, all of its first twin's that has any. Statements
+about the material or a sibling are context: unknown. A sentence on a product's document that names another product (an
+ABS sheet advising a dry box &quot;when printing or storing HT-PLA-GF&quot;) is typed so (<code>evidence-types</code>, &quot;Names another
+product&quot;) and speaks for neither: no rule reads it and no page quotes it (owner's ruling, 2026-10-25). <span class="tag">evidence</span></p>
+<p>12.4 <strong>Reducing statements to an answer</strong>, in this order:</p>
+<ol>
+<li>something contrary (not resistant, soluble, flammable) and nothing positive (resistant, insoluble, self-extinguishing):
+fail;</li>
+<li>positive and contrary: unsettled (&quot;mixed across exposures&quot;);</li>
+<li>positive with limited or no-verdict statements: unsettled;</li>
+<li>positive only: pass (&quot;covers the exposures stated, not every chemical in the class&quot;);</li>
+<li>limited only: unsettled;</li>
+<li>otherwise: unknown.</li>
+</ol>
+<p>A category pools its agents: weak acids resistant with strong acids not resistant is unsettled.</p>
+<p>12.5 <strong>Polymer level (resin references).</strong> Where a material has no record at all in a category, a resin producer's or
+handbook reference for its polymer speaks for it: never fatigue or creep (those are about parts under load). Per
+category, all agents resistant gives resistant; an agent that screens (not resistant, soluble) and none resistant gives
+not resistant or soluble; anything else, limited. A polymer-level answer never passes: it is unknown, and screens the
+material out only under Include with estimates and resin data on. <span class="tag">evidence</span></p>
+</div></section><section class="method-part" id="13" data-section="method-13"><h2>13. Other requirements</h2><div><ul>
+<li><strong>Scope.</strong> A material the H2C cannot print (the 14 industrial high-temperature plastics such as PEEK and PEI) fails
+the scope requirement and is shown only to say why; every template asks it. Retired materials and products keep their
+rows but are never compiled, shown or counted. <span class="tag">physics</span></li>
+<li><strong>H2C status.</strong> A product made by Bambu Lab is an official Bambu product; another maker's product of an officially
+listed material is &quot;officially listed family&quot;; otherwise the material's status (conditional, theoretical, exceeds
+H2C limits). The requirement passes when the status is one the user chose. <span class="tag">evidence</span></li>
+<li><strong>Build material.</strong> A support or interface material fails &quot;build material&quot; (every template asks it).</li>
+<li><strong>Facets.</strong> Family, base polymer, reinforcement (carbon fibre, glass fibre, unfilled, ESD, foaming, undisclosed),
+named filler (as the materials table names it), ESD, flexible, flame retardant: a facet requirement passes when the
+material's facet matches one the reader chose, unknown where none is recorded. Family and base polymer let a reader
+keep the kinds of plastic they name (owner, 2026-10-25).</li>
+<li><strong>Buyable.</strong> Passes when the product has a Canadian, unquarantined offer (in stock, where asked); fails when offers
+exist and none is in stock where in stock was asked; unknown when no offer was sampled. <span class="tag">evidence</span></li>
+<li><strong>Exact grade.</strong> Passes when the product (or its twin) has measured values of its own; fails otherwise.</li>
+<li><strong>No open conflicts.</strong> Fails when an unresolved conflict or quarantine is recorded about the product, its twin or
+the material as a whole; a sibling's conflict does not hold it out. <span class="tag">evidence</span></li>
+</ul>
+</div></section><section class="method-part" id="14" data-section="method-14"><h2>14. Judging one requirement</h2><div><p>A requirement is a limit on a headline (at least, at most, more than, less than), a print or other gate, a facet, an
+environment category, or an evidence check. It is mandatory unless marked &quot;report only&quot;: a reported requirement is
+judged and shown, but never fails, holds open, hides, groups or ranks anything. Each requirement has a stable key (its
+position in the scenario), never an object identity.</p>
+<p>14.1 <strong>Answers.</strong> Pass, fail, unsettled (evidence exists and the limit cuts through it), unknown (no comparable
+evidence). Unknown and unsettled are both <em>unresolved</em>. An unsettled answer is <strong>on the line</strong> in three cases only: a
+product's own point within the test scatter (§14.3), an equality conversion or class limit within the scatter, and a
+print window at its edge. A range or bound across the limit, a ceiling only, a recommendation above reach and mixed
+chemical statements are unsettled but not on the line. &quot;Does not apply&quot; is unknown and hides under Include (§15.2).</p>
+<p>14.2 <strong>Comparing an interval with a limit.</strong> A point at exactly the limit passes &quot;at least&quot; and &quot;at most&quot; and fails
+&quot;more than&quot; and &quot;less than&quot;. A range or bound passes when all of it meets the limit, fails when all of it misses, and is
+unsettled when the limit cuts through it. An open end never decides by itself. <span class="tag">evidence</span></p>
+<p>14.3 <strong>Test scatter.</strong> Makers' figures for the same product move between their own sheets: density 2 %, modulus and
+strength 10 %, elongation 20 %, heat deflection 5 °C (none for impact, glass transition, hardness or price). A published
+point (or the mean of a mean with a band) that misses the limit by no more than the scatter (a value on the band's edge
+is inside it) is <strong>on the line</strong>; one that meets
+it within the scatter <strong>passes with a thin margin</strong>. Scatter applies to a product's own point, an equality conversion and a
+class limit; never to a range, a bound, a floor, ceiling or band from a conversion (their ends are a physical inequality or
+the envelope of measured pairs), a median, or a ceiling-only value. Band edges are rounded to 12 significant digits. <span class="tag">physics</span></p>
+<p>14.4 <strong>The order of evidence for a numeric requirement</strong>, per product and state:</p>
+<ol>
+<li>the property does not apply → unknown, does not apply;</li>
+<li>the product's own deciding value (or its twin's) → compared as in §14.2–14.3; a contradicting bound only marks it
+doubtful;</li>
+<li>otherwise bounds (§8): their intersection decides when it settles the limit (pass or fail); sheets disagree →
+unsettled; an intersection that leaves the limit inside it decides nothing and adds a note;</li>
+<li>otherwise, with estimates on, an estimate → unknown, marked estimated (§17); it never passes;</li>
+<li>a ceiling-only value that would meet a minimum, or whose ceiling has no known load (§8.4) → unsettled;</li>
+<li>a set-apart value → unknown (&quot;published, but its bar is not described&quot; and so on);</li>
+<li>a value published only in another state → unknown, naming it and what would let it decide (allow annealing; ask about
+humid use);</li>
+<li>nothing → unknown.</li>
+</ol>
+<p>14.5 <strong>Print, chemical and other requirements</strong> answer as in §11–§13. A print verdict maps: within and within at the low end
+pass, edge is on the line, exceeding a recommendation is unsettled, exceeds fails, unknown is unknown; a product with no
+print recipe at all is unknown. A product judged in an annealed state also gets the treatment requirement (§11.8).</p>
+</div></section><section class="method-part" id="15" data-section="method-15"><h2>15. A product&#39;s answer, a material&#39;s answer</h2><div><p>15.1 <strong>A product in one state</strong>: fail if any mandatory requirement fails; pass if none is unresolved; otherwise unknown.
+A product is judged in every state the scenario allows; all requirements must be met <strong>in the same state</strong>. The state with
+the best group (§15.3) answers; ties go to the earlier state (§5).</p>
+<p>15.2 <strong>A material</strong>: pass if any product passes; otherwise unknown if any product is unknown; otherwise fail (a material
+fails only when every product fails). Its share is <em>all</em> (some pass, none fail), <em>some</em> (some pass, some fail) or <em>none</em>.
+Counts: products, passing, failing, untested, hidden. Under Include, an unresolved product is <strong>hidden</strong> when at least one
+of its open mandatory requirements hides: a property that does not apply, resin data that screens (estimates on), or, for
+a material with no product, its own estimate (§15.5). An unknown material is hidden when every unresolved product is
+hidden. Under Leave out nothing is hidden and only passing materials are listed. <span class="tag">evidence</span></p>
+<p>15.3 <strong>Groups</strong>, for what is not yet settled (first that applies):</p>
+<ol>
+<li><em>meets</em> (pass), <em>fails</em> (fail), <em>hidden</em>;</li>
+<li><em>unlikely to meet</em>: an open requirement rests on an estimate whose 95 % range wholly misses the limit (the range
+already lies inside the product's own bounds, §17.2);</li>
+<li><em>one check away</em>: every open requirement is a nozzle, bed or chamber check, or exactly one is open and it is on the
+line (§14.1) or its sheets disagree;</li>
+<li><em>not enough data</em>, tagged <strong>likely</strong> when at least one requirement is open and every open one is an estimate whose 80 %
+range wholly meets its limit, unless one of the product's own converted values wholly misses the limit, or those values
+disagree with each other and not all of them meet it (a centre that meets is not enough).</li>
+</ol>
+<p>Order: meets, one check away, likely, not enough data, unlikely, hidden, fails; within a group, fewer open requirements first,
+then the smaller shortfall: the worst gap over the open mandatory numeric requirements, from the observed value, else the
+bound, else the estimate's centre, as a fraction of the limit (infinite where none exists; other requirements count as 0),
+rounded to 12 significant digits. The old tool compared raw floating point, so a tie it broke in the last digit may differ.</p>
+<p>15.4 <strong>The material's group and its deciding product.</strong> The best product by that order decides the material's group and is
+named with its reasons; ties go to the product listed first for the material (product file order). One override: when, for
+some mandatory number, at least one product's own measured value misses it and no product holds it open, the material is
+<em>unlikely to meet</em> (&quot;every measured product misses it: k of n&quot;), and no product of it is tagged likely. A product holds a
+requirement open by a pass; by an unsettled answer on its own value (on the line, or a range or bound across the limit); by
+sheets disagreeing; or by being on the line on an equality conversion. A class limit, floor, ceiling, band or ceiling-only
+value never holds it open. A value read from a twin counts as the product's own measured value. The material also loses
+&quot;likely&quot; (and so do all its products) when, on some mandatory number, every product with its own measured value fails it
+or is on the line and none passes. <span class="tag">evidence</span></p>
+<p>15.5 <strong>A material with no product</strong> (today PA66-CF, PA612, PA612-GF) is judged on its own spread and estimate: an unknown
+answer is &quot;not enough data: no product on record&quot;, never likely; it is the only case an estimate can hide. With Include and
+estimates on, it is hidden when its plausible range wholly misses a mandatory requirement and its route's back-test holds
+(§17.3).</p>
+<p>15.6 <strong>Why excluded.</strong> For each requirement the tool shows how many more materials would remain without it, how many it
+removes (every product fails it) and how many it holds open. It is a view of the same rules.</p>
+</div></section><section class="method-part" id="16" data-section="method-16"><h2>16. Ranking</h2><div><p>Survivors are ordered by the goal the user picks: a performance index per product, from its own values in the state it
+passes in, never from a material's median: <span class="tag">physics</span></p>
+<div class="scroll-x" tabindex="0" role="region" aria-label="16. Ranking"><table>
+<thead>
+<tr>
+<th>Goal</th>
+<th>Index</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tie stiffness</td>
+<td>E/ρ</td>
+</tr>
+<tr>
+<td>beam stiffness</td>
+<td>E^½/ρ</td>
+</tr>
+<tr>
+<td>panel stiffness</td>
+<td>E^⅓/ρ</td>
+</tr>
+<tr>
+<td>tie strength</td>
+<td>σ/ρ</td>
+</tr>
+<tr>
+<td>beam strength</td>
+<td>σ^⅔/ρ</td>
+</tr>
+<tr>
+<td>panel strength</td>
+<td>σ^½/ρ</td>
+</tr>
+<tr>
+<td>beam stiffness per cost</td>
+<td>E^½/(C·ρ)</td>
+</tr>
+<tr>
+<td>tie strength per cost</td>
+<td>σ/(C·ρ)</td>
+</tr>
+</tbody>
+</table></div>
+<p>E is the XY tensile modulus, σ the XY tensile strength, ρ the density, C the price per kg. All are in-plane (XY) only;
+strength indices are proxies (elastic-limit derivation). A material ranks by the median index over its passing products
+that have every input, each in the state it passes in; its best product has the highest index (ties to the higher product
+ID). A passing material is unranked only when none of its passing products has every input, and says why. Ties between
+materials go to the higher value, then the material ID. Unresolved and failing materials are never ranked. The table, chart and export share one ranking. The Pareto front on the chart is over
+passing product points only and is never presented as a ranking.</p>
+</div></section><section class="method-part" id="17" data-section="method-17"><h2>17. Estimates</h2><div><p>17.1 <strong>What an estimate is for.</strong> For density, XY tensile modulus, XY tensile strength, XY elongation and heat deflection at
+0.45 MPa, every material the model can place (§17.2) gets a marked estimate for a product of it: its typical value, a likely range (80 %) and a
+plausible range (95 %); the views show it wherever none of its products publishes the headline. A product that publishes
+no comparable value gets one of its own. It is read only with Include and &quot;Use estimates and resin data&quot; on, only in the
+as-printed dry state. <strong>An estimate never makes a product pass and never changes a verdict.</strong> It only sorts unresolved
+materials (likely, not enough data, unlikely to meet) and, for a material with no product, can hide it. <span class="tag">evidence</span></p>
+<p>17.2 <strong>The model (owner's approval 2026-10-26).</strong> One hierarchical model per headline, at the material level, on ln for a
+quantity with a true zero (<code>headlines.csv</code>, non negative) and in degrees for heat deflection. It fits every material
+that is neither a family entry nor excluded, and estimates those it can place, and the products of each that publish no
+comparable value. It places a material by its estimate identity, a <code>polymers.csv</code> row. A material whose estimate identity
+names none (plasticised PVC-P, PC-ASA, TPS, TPV, the PLA blends, PCL-EC and the homes of nylons and elastomers whose
+makers name no polymer) has no estimate, nor have its products, and none of them is a held-out case (§17.3): its products
+publish their own values, and a range borrowed from neighbours it cannot be placed among would only mislead. Its
+products' values still inform the fit. The settings are named in <code>src/science/estimate/settings.ts</code>.</p>
+<ul>
+<li><em>A material's typical value</em> is a latent: its printed state's effect (glassy, crystalline, rubbery, not modelled), plus
+shared effects of its chemical group (its polymer's kind, else its family), its polymer (else its base polymer), its
+filler, and its filler in its printed state, plus its own deviation. Each shared effect and the own deviation is normal
+about zero with a spread of its own; filler × state and the own deviation have one spread per state class (glassy,
+crystalline, other), since a fibre lifts a crystalline bar's heat deflection far more than a glassy one's. So PLA-GF is
+PLA moved by what glass fibre does to a glassy matrix.</li>
+<li><em>Its location</em> is the mean of its plain products' values, one per formulation (a reprinted table counts once), each
+held within its median ± 2.5 state spreads (<code>winsor</code>), with that mean's own noise. The spreads are fitted by REML with
+the boundary-avoiding penalty Σ ln τ (a gamma(2, →0) prior on each, so no spread a small sample cannot see is set to
+zero), by coordinate ascent on ln τ in halving steps (<code>spreads</code>). A material's prior from all the others is exact
+leave-one-material-out; one whose products publish nothing is predicted from its neighbours by the same equations
+(kriging), the uncertainty in the state effects included. A printed state no publishing material shares sets no
+effect, and no estimate.</li>
+<li><em>Products scatter about their material</em> with a spread per printed state, σ_s: the median absolute difference of two
+products of one material over 0.954, each material weighing one; every state's where fewer than 5 materials have two
+products (<code>minStateMaterials</code>); never below half the test scatter (<code>scatterShare</code>). A material's own spread is shrunk
+toward its state's, (ν0 σ_s² + SS) / (ν0 + n − 1) over its n products, ν0 = 3 (<code>nu0</code>), so a predictive about it is a
+Student t with ν0 + n − 1 degrees of freedom: PLA keeps its narrow spread, a material of two products takes mostly its
+state's. Its latent's posterior combines its prior with its products' values by precision.</li>
+<li><em>A maker's term.</em> A maker's (test house's) products may read high or low. Its term is the median deviation of its
+products from their materials' other products, shrunk by the spread of makers' medians that their noise leaves (none
+where none is left). Where a material's products publish, each is corrected by its maker's term, and a product's own
+maker's is added to its estimate.</li>
+<li><em>A product's own related figure</em> (another direction, another load, a moulded, annealed or conditioned bar, a flexural
+value, a strain at yield, a hardness, a transition) converts by an estimate row of <code>conversions.csv</code>. A row names the
+figures it takes (property; direction as §3.5 reads it, the headline's own, Z or none stated, so XZ, ZX, YX and ±45°
+bars convert by none; moulded or a part; as printed, annealed or conditioned; load; the materials it holds for) and
+converts by value × factor + offset, its figures by their median; a Shore hardness is first a modulus by Gent (A) or by
+Qi, Joyce and Boyce (D). A bound converts by no row (§3.1); a bar its sheet does not describe as printed converts a
+plastic that can crystallise by no row (§8.4); a crystallising grade is read crystalline. A row's bias over its
+documented factor is learned from same-product pairs, each material weighing one, shrunk to the documented factor with
+3 pseudo-materials (<code>k0</code>), its scatter to the rows' pooled scatter with 6 (<code>rowPrior</code>); both are learned per state
+class and shrunk to the row's (on these data flexural to tensile modulus is about ×0.94 in glassy plastics and ×1.09 in crystalline ones).
+Where the product's material's other products measure the row, its bias for that material is partly theirs. A figure
+that reprints the value (within 1 %, §3.4) makes no pair.</li>
+<li><em>A product's estimate</em> is its material's predictive (its latent's posterior and the product spread, the maker term
+added), combined by inverse variance with its own figure through the row with the least scatter (rows are never
+stacked: one sheet's figures are not independent), at most 8 degrees of freedom then (<code>ownDf</code>). A material whose
+products publish nothing reads each product's best converted figure as an observation of its latent with its row's
+scatter; a material with no product reads its reference records so.</li>
+<li><em>A declared variant</em> never enters its material's fit. It is estimated from its own variant's products and its own
+figure, about its material's latent widened by the variants' spread (method of moments); with neither, it has none.</li>
+<li><em>Routes.</em> An estimate rests on one of four: <em>own</em> (its own figure, beside its material's publishing products),
+<em>siblings</em> (its material's publishing products), <em>related</em> (no product of its material publishes: their related
+figures), <em>neighbours</em> (nothing of its material's own).</li>
+</ul>
+<p><strong>Ends are conformal on each route.</strong> Each held-out case of the back-test (§17.3) is scored by its probability under its
+own predictive. Each route pools its cases' scores, each material weighing one. An estimate's points (2.5, 10, 50, 90,
+97.5 %) are its own predictive's points at its route's conformal quantiles of those scores: the ⌈(n+1)q⌉-th smallest at
+and above the centre and the ⌊(n+1)q⌋-th below it, n the materials, a held-out case's own material left out. Strata set
+centres and scales; the ends come from 40 to 132 materials a route, so no stratum needs nine materials for an end, and
+PLA's estimate comes from PLA. The centre is its predictive's: for a material, its typical value. An end no route can
+set takes the physical limit on its side, or stays open; an open end makes no &quot;unlikely&quot; and hides nothing.
+<span class="tag">evidence</span></p>
+<p><strong>Physical limits</strong> hold every range, each point rounded outward to four figures. <span class="tag">physics</span></p>
+<ul>
+<li>Every estimate lies inside the product's own bounds (§8: its deciding rows held exactly after rounding, its kind's
+class limits beyond the test scatter, as §14.3 judges them). A held-out product's bounds are drawn from the figures left
+once its value is hidden, its kind's limits widened by the other products only, so no value bounds itself.</li>
+<li>A material is bounded as a product of it with no record would be, by its kind's class limits; a material with no
+product, from its reference records.</li>
+<li>Every estimate lies inside the hard ends of its property's plausibility window (<code>plausibility.csv</code>): the most specific
+window for the product's filler and matrix, one whose Applies to names its material first (a liquid-crystal polymer's
+modulus, up to 20 GPa where other unfilled semicrystallines stop at 6), then the filler's before the matrix's, the
+widest of both where a semicrystalline plastic prints glassy. Its matrix is its polymer's morphology, else its family's
+(word lists). A published value beyond those ends would be flagged implausible, so no estimate claims one; the window
+decides nothing else (§8.2). An elastomer's elongation, for one, is at most 1,500 %.</li>
+<li>A product whose own floor or ceiling lies beyond the whole range has no estimate. The ends are clipped, never the
+predictive truncated: renormalising inside the limits narrowed the ranges below their shares on these data.</li>
+</ul>
+<p>17.3 <strong>What the decision reads.</strong> The likely (10–90 %) and plausible (2.5–97.5 %) ranges; the centre (ordering only); the
+product's own converted figures, each through its row alone at the own route's plausible points (they forbid &quot;likely&quot;
+when one wholly misses); the route it rests on, which the reason names; and its measured floors, which stop a screen or an
+&quot;unlikely&quot; that one of them disproves. Any coverage is marginal: averaged over a route's materials, assuming products
+that publish a value are like those that do not, which no back-test can check. The tags sort; they are not one product's
+probabilities.</p>
+<p><strong>The back-test</strong> estimates every plain product that publishes a value as if it did not, each on the route the model
+would take for it, with each material weighing one. The <em>product family</em> hides a product and keeps its material's other
+publishing products (route own or siblings); the <em>material family</em> hides every value of its material, with every pair on
+it, and keeps its products' related figures (route related), and holds every material out whole, nothing of its own kept
+(route neighbours). The state spreads it measures against leave out a fifth of the materials at a time (<code>folds</code>); the
+row biases and the maker terms leave out the held-out material; the spreads τ are fitted once (refitting them without
+each fifth moved no tail by more than 1.7 points when the model was designed). Each 10 % tail must hold 10 ± 5 % and each 2.5 %
+tail at most 5 %. Groups are headline × family × route: a route whose cases cover 50 materials (<code>groupMaterials</code>) is scored alone, a
+family's smaller routes are scored together once they cover 50, and what is left is scored together at the headline,
+however few. Strength from its material's other products alone (strength, product family, siblings) is held back by the
+owner (2026-10-26, <code>heldBack</code>) and scored alone whatever its size, until it holds: products whose sheets give only the value are
+disproportionately those of makers that read low. A group that fails, or that nothing checks (a declared variant), is
+withheld and labelled: its estimates are shown and read by nothing (owner ruling 2026-10-20). At 50 materials a share
+carries about ±8 points of noise, so the test finds gross miscalibration, not fine; the report prints each share's 95 %
+interval, each route on its own with its median widths, the fitted spreads, how many held-out values lie beyond a
+physical limit (a range only where all of it does), and, at each template limit, the share of held-out products of each
+family that meet it among those the decision tags likely and unlikely, all of them and those whose estimate centres near
+the limit (<code>npm run check</code>, &quot;estimates&quot;). The design was tuned on these data (ν0, the row and maker priors, the penalty,
+the terms), so &quot;holds&quot; is weak evidence until the next imports.</p>
+<p>17.4 <strong>Does not apply, as data.</strong> For each of tensile modulus, tensile strength, elongation and heat deflection, a support
+or interface material that publishes neither the value nor anything an estimate row converts to it has that property
+marked &quot;does not apply&quot;: it is not characterised as a structural material. Density is never marked. This was a rule
+hidden in the old estimate stage; here it is a material-level data rule beside heat deflection not applying to
+elastomers.</p>
+</div></section><section class="method-part" id="18" data-section="method-18"><h2>18. The scenario</h2><div><p>18.1 <strong>What the user sets.</strong> The requirements (§14); Leave out or Include for unresolved materials; Use estimates and resin
+data (only under Include); the use state (as printed, or annealing allowed with the oven's limit; dry or humid); whether only a
+brass nozzle is fitted; the goal to rank by. Nothing else changes an answer.</p>
+<p>18.2 <strong>Templates.</strong> Each asks scope, build material, and nozzle, bed and chamber on the H2C, then:</p>
+<div class="scroll-x" tabindex="0" role="region" aria-label="18. The scenario"><table>
+<thead>
+<tr>
+<th>Template</th>
+<th>Required</th>
+<th>Reported only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Outdoor structural part</td>
+<td>HDT at 0.45 MPa ≥ 100 °C; XY modulus ≥ 3 GPa; density ≤ 1500 kg/m³</td>
+<td>price ≤ 100 CAD/kg</td>
+</tr>
+<tr>
+<td>Indoor prototype</td>
+<td>–</td>
+<td>price ≤ 45 CAD/kg</td>
+</tr>
+<tr>
+<td>Lightweight structure</td>
+<td>density ≤ 1250 kg/m³; XY modulus ≥ 2.5 GPa</td>
+<td>–</td>
+</tr>
+<tr>
+<td>Warm environment</td>
+<td>HDT at 0.45 MPa ≥ 80 °C</td>
+<td>–</td>
+</tr>
+<tr>
+<td>High-stiffness fixture</td>
+<td>XY modulus ≥ 5 GPa</td>
+<td>HDT at 0.45 MPa ≥ 90 °C</td>
+</tr>
+<tr>
+<td>Flexible component</td>
+<td>XY elongation ≥ 100 %; XY modulus ≤ 0.1 GPa</td>
+<td>–</td>
+</tr>
+</tbody>
+</table></div>
+<p>18.3 <strong>Saved questions.</strong> A question lives in the page address and opens again; addresses saved by the old tool (formats 1
+and 2) open through one adapter. A question saved against another release says so and is answered on the current one.</p>
+</div></section><!--]--></article><!--]--></main><footer class="colophon" data-section="colophon"><div class="col-in"><div class="col-main"><p class="col-standing">Data-sheet values describe test specimens, not design allowables.</p><div class="col-nav"><!--[--><!--[--><a class="btn ret" data-return href="/filament-atlas/"><svg class="icon" viewbox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M8 5 3 10l5 5M3.5 10H17"></path></svg><span class="ret-long">Open the selector</span><span class="ret-short">Selector</span></a><!--]--><!--[--><a class="btn" href="/filament-atlas/m/">All materials<!----></a><!--]--><!--]--></div><!----></div><!----><p class="col-sign" data-release="06c989076142"><svg class="col-mark" viewbox="0 0 32 32" aria-hidden="true" focusable="false"><rect width="32" height="32" rx="8"></rect><path d="M9 22h14M11 16.5h10M13 11h6"></path></svg><b>Filament Atlas</b> · release 06c989076142 · documents read 10 Sep–26 Oct 2026 · built <time datetime="2026-10-26">26 Oct 2026</time></p></div></footer><div class="tip" id="tip" aria-hidden="true" hidden></div><!--]-->
+</body>
+</html>
