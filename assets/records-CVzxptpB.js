@@ -1,0 +1,1 @@
+import{Di as e,Kr as t,Oi as n}from"./state-CiiNqTlV.js";var r=e(e=>n(`${t}data/m/${e}.records.json`,`41e5468a5a91`,`The material's records`));export{r as t};
